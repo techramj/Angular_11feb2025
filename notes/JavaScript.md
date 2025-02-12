@@ -107,8 +107,6 @@ let is block scope
 
 ### array
 
-
-
 ## for loop
 ```
 let arr =[10,20,11,40,50];
@@ -140,4 +138,43 @@ console.log('');
 
 ```
 
+## example of map, find
+```
+let arr =[10,20,11,40,51];
+
+
+let barr =[];
+
+for(let a of arr){
+  barr.push(a*a*a);
+}
+
+console.log(barr);
+
+let carr = arr.map(a => a*a*a);
+console.log(carr);
+
+/*let oddArr = [];
+
+for(let a of arr){
+  if(a%2 != 0){
+    oddArr.push(a);
+  }
+}
+*/
+let oddArr = arr.filter(a => a%2 != 0);
+let oddArr2 = arr.filter(function(a){
+  return a%2 != 0;
+});
+
+let oddFilter =function(a){
+  return a%2 != 0;
+};
+let oddArr3 = arr.filter(oddFilter);
+console.log(oddArr2);
+
+
+
+
+```
 
