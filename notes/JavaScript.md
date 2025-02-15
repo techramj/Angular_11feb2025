@@ -388,3 +388,13 @@ console.log(a,b,c,d);
 ```
 
 
+let a ;
+a = 'apple';
+a = true;
+
+let num1;
+
+
+
+let num1:number;
+num1 = '10';
