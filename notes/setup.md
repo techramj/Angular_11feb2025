@@ -3,6 +3,7 @@
 ## install node js
     https://nodejs.org/en/download
 
+To check the version
 ```
 node -v
 npm --v
@@ -12,10 +13,23 @@ npx --v
 ## install visual studio code
     https://code.visualstudio.com/download
 
+```
+Add the plugin
+Angular Language Service
+Angular Essential (version 18)
+```
+
+# install angular cli
+
+
+
+
+
+
 
 ## keywords/commands
-| keyword | desc |
-|---------|------|
+| keyword | Description              |
+|---------|--------------------------|
 |npm      | Node Package Manager|
 |npx      | Node Package eXecuter |
 
