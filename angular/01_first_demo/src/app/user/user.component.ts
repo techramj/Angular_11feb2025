@@ -1,0 +1,17 @@
+import { style } from "@angular/animations";
+import { Component } from "@angular/core";
+
+@Component(
+    {
+    selector:'app-user',
+    standalone: true,
+    imports: [],
+    templateUrl : './user.component.html',
+    styleUrl : './user.component.css'
+    }
+)
+export class UserComponent{
+   name:string = 'Jack';
+   age:number | undefined;
+   gender:'Male' | 'Female' ='Male';
+}
