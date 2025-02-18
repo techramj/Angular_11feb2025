@@ -6,17 +6,9 @@
 </fieldset-->
 
 <fieldset>
-  <!--
-  @for(user of users; track user.name){
-   <div>
-    <app-user [name]="user.name" [age]="user.age" [gender]="user.gender" />
-   </div>
+  @for(item of users; track item.name){
+    <app-user [name]="item.name" [age]="item.age" [gender]="item.gender" />
   }
--->
-
-<div *ngFor="let user of users">
-  <app-user [name]="user.name" [age]="user.age" [gender]="user.gender" />
-</div>
 
 
 </fieldset>
