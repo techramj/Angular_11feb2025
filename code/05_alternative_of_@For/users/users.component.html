@@ -1,0 +1,23 @@
+<!--fieldset>
+    <h3>Users Component</h3>
+    <app-user [name]="users[0].name" [age]="users[0].age" [gender]="users[0].gender" />
+    <app-user [name]="users[1].name" [age]="users[1].age" [gender]="users[1].gender" />
+    <app-user [name]="users[2].name" [age]="users[2].age" [gender]="users[2].gender" />
+</fieldset-->
+
+<fieldset>
+  <!--
+  @for(user of users; track user.name){
+   <div>
+    <app-user [name]="user.name" [age]="user.age" [gender]="user.gender" />
+   </div>
+  }
+-->
+
+<div *ngFor="let user of users">
+  <app-user [name]="user.name" [age]="user.age" [gender]="user.gender" />
+</div>
+
+
+</fieldset>
+

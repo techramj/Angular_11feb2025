@@ -1,0 +1,33 @@
+<h1>{{name}}'s Details</h1>
+<p>Name: {{name}}</p>
+<p *ngIf="age">Age: {{age}}</p>
+<p *ngIf="!age"><p>Age: **</p>
+
+<p *ngIf="gender; else genderTemplate">Gender: {{gender}}</p>
+
+<ng-template #genderTemplate>
+    <p>Gender: Cannot be disclosed.</p>
+</ng-template>
+
+
+
+
+
+<!--
+<h1>{{name}}'s Details</h1>
+<p>Name: {{name}}</p>
+@if(age){
+    <p>Age: {{age}}</p>
+}
+@else {
+   <p>Age: **</p> 
+}
+
+@if(gender){
+    <p>Gender: {{gender}}</p>
+}
+@else {
+    <p>Gender: Cannot be disclosed.</p>
+}
+
+-->
