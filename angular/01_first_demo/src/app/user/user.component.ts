@@ -13,6 +13,6 @@ import { Component, Input } from "@angular/core";
 )
 export class UserComponent{
    @Input()name!:string ;
-   @Input()age:number | undefined;
-   @Input()gender:string | undefined;
+   @Input()age!:number;
+   @Input()gender!:string;
 }

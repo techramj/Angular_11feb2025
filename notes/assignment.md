@@ -25,7 +25,14 @@ users :{name:string, age:number, gender:'Male' |'Female' | ''}[] = [
 
 
 users.component 
-
+users :{name:string, age:number, gender:'Male' |'Female' | ''}[] = [
+    {name:'Sam', age:23, gender:'Male'},
+    {name:'Jessica', age:21, gender:'Female'},
+    {name:'Ajay', age:20, gender:'Male'},
+    {name:'Dipak', age:21, gender:'Male'},
+    {name:'Vijay', age:22, gender:'Male'},
+    {name:'Shreya', age:21, gender:'Female'},
+  ];
 
 
 
@@ -33,6 +40,25 @@ user.component
 name
 age
 gender
+
+```
+
+solution:
+```
+app.component
+a = 10;
+<users  [a]= a>
+
+
+users.component 
+
+@Input({alias:'a'}) a1 = 0;
+<user [x]=a1>
+
+
+user.component
+@Input() x = ?
+
 
 ```
 
@@ -44,3 +70,12 @@ modify the above project using structual directive
 @ngFor
 @ngIf
 
+
+
+class Account{
+
+  @Input({alias:'account-id'}) id:number =10;
+}
+
+
+<app-account [account-id]=10>

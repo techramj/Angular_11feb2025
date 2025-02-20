@@ -16,3 +16,15 @@ ng g c <component_name> --skip-tests
 
 eg: ng g c user --skip-tests
 ```
+
+
+##
+selector 
+<app-users>
+
+@output
+
+@Signal
+
+use above features in project
+

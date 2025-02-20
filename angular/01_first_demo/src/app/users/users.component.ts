@@ -1,23 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { UserComponent } from '../user/user.component';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [UserComponent, NgFor],
+  imports: [UserComponent, NgFor, NgIf],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
 export class UsersComponent {
 
-  users = [
-    {name:'Sam', age:23, gender:'Male'},
-    {name:'Jessica'},
-    {name:'Ajay', age:20, gender:'Male'},
-    {name:'Dipak', age:21, gender:'Male'},
-    {name:'Vijay', gender:'Male'},
-    {name:'Shreya'},
-  ];
+  @Input({alias:'my-users'}) users:{name:string, age:number, gender:string}[] =[];
 
 }
