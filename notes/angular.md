@@ -28,3 +28,9 @@ selector
 
 use above features in project
 
+
+# output decorator example
+              AppComponent
+
+ButtonComponent             ButtonBannerComponent
+btn                         button clickd count = 1

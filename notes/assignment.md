@@ -79,3 +79,12 @@ class Account{
 
 
 <app-account [account-id]=10>
+
+
+# Assignement 5
+create three component and call it in three differnt way
+1. element selector
+2. property selector
+3. class selector
+
+
