@@ -7,11 +7,12 @@ import { Comp2Component } from './comp2/comp2.component';
 import { Comp3Component } from './comp3/comp3.component';
 import { ButtonBannerComponent } from './button-banner/button-banner.component';
 import { ButtonComponent } from './button/button.component';
+import { BindingComponent } from './binding/binding.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ ButtonBannerComponent, ButtonComponent],
+  imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
