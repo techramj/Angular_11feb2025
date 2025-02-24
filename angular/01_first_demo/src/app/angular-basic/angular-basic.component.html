@@ -4,7 +4,7 @@
 
 
 <div>
-    Today is: {{time}}
+    Today is: {{time | async }}
 </div>
 
 
@@ -34,3 +34,53 @@
     <div *ngSwitchCase="7">Sunday</div>
     <div *ngSwitchDefault>Wrong input!</div>
 </div>
+
+<br>
+<button (click)="showHide()">Show/Hide Employee Details</button>
+@if(showEmployeeDetails){
+<pre>
+  Employee: {{emp | json}}
+  id                : {{emp.id}}
+  name              : {{emp.name}}
+  name              : {{emp.name | uppercase}}
+  name              : {{emp.name | lowercase}}
+  name              : {{emp.name | titlecase}}
+
+  Salary            : {{emp.salary}}
+  Salary            : {{emp.salary | number}}
+  Salary            : {{emp.salary | number:'8.2-4'}}
+  Salary            : {{emp.salary | currency}}
+  Salary            : {{emp.salary | currency:'INR'}}
+
+  Variable          : {{emp.variable}}
+  Variable          : {{emp.variable | percent}}
+
+  Gender            : {{emp.gender}}
+  Gender            : {{emp.gender | gender}}
+
+  isMarried         : {{emp.isMarried}}
+
+  City Details      : {{emp.city | json}}    
+  @for(item of emp.city | keyvalue ; track item){
+    {{item.key}}    : {{item.value}}
+  } 
+
+  Doj               : {{emp.doj}}
+  Doj(date)         : {{emp.doj | date}}
+  Doj(full)         : {{emp.doj | date:'full'}}
+  Doj(short)        : {{emp.doj | date:'short'}}
+  Doj(medium)       : {{emp.doj | date:'medium'}}
+  Doj(long)         : {{emp.doj | date:'long'}}
+
+  Mobile            : {{emp.mobile}}
+  Mobile            : XXXXXXXX{{emp.mobile | slice: 8 : 10}}
+
+  Pancard           : {{emp.pan}}
+  Pancard           : {{emp.pan | uppercase|slice:0:2 }}XXXXXXX{{emp.pan | uppercase | slice:8:10}}
+
+
+
+
+</pre>
+}
+                            
