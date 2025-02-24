@@ -1,0 +1,36 @@
+<div class="container">
+    <h2 [ngClass] = "['A','B']">{{title}}</h2>
+</div>
+
+
+<div>
+    Today is: {{time}}
+</div>
+
+
+<input type="checkbox" [(ngModel)]="show" > show/hide color list {{show}}
+@if(show){
+    <div>
+        <h3>My Favourite colors</h3>
+        <ul>
+            @for(c of colors;track c){
+              <li [ngStyle]="{'color': c}">{{c}}</li>
+            }
+        </ul>
+    </div>
+}
+
+<div>
+    <h3>Select Day</h3>
+    <input type="number" [min]="min" [max]="max" [(ngModel)]="day"> {{day}}
+</div>
+<div [ngSwitch]="day">
+    <div *ngSwitchCase="1">Monday</div>
+    <div *ngSwitchCase="2">Tuesday</div>
+    <div *ngSwitchCase="3">Wednesday</div>
+    <div *ngSwitchCase="4">Thursday</div>
+    <div *ngSwitchCase="5">Friday</div>
+    <div *ngSwitchCase="6">Saturday</div>
+    <div *ngSwitchCase="7">Sunday</div>
+    <div *ngSwitchDefault>Wrong input!</div>
+</div>

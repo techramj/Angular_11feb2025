@@ -8,11 +8,12 @@ import { Comp3Component } from './comp3/comp3.component';
 import { ButtonBannerComponent } from './button-banner/button-banner.component';
 import { ButtonComponent } from './button/button.component';
 import { BindingComponent } from './binding/binding.component';
+import { AngularBasicComponent } from './angular-basic/angular-basic.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent],
+  imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent, AngularBasicComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
