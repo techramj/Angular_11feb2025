@@ -4,7 +4,6 @@ import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './users/user/user.component';
 import { DUMMY_USERS } from './dummy-users';
 import { TasksComponent } from './tasks/tasks.component';
-import { TasksService } from './tasks/tasks.service';
 
 @Component({
   selector: 'app-root',
@@ -27,11 +26,6 @@ export class AppComponent {
   onSelectUser(userId:string){
     console.log('user selected: ',userId);
     this.selectedUserId = userId;
-  }
-
-  testFlag =true;
-  foo(){
-    this.testFlag = !this.testFlag;
   }
   
 }

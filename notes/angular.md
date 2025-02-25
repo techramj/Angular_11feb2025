@@ -34,3 +34,11 @@ use above features in project
 
 ButtonComponent             ButtonBannerComponent
 btn                         button clickd count = 1
+
+
+
+# service
+1. how to create service
+```
+ng g s service-name
+```

@@ -11,7 +11,8 @@ import { TasksService } from './tasks/tasks.service';
   standalone: true,
   imports: [HeaderComponent, UserComponent, TasksComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: [TasksService]
 })
 export class AppComponent {
   name = 'Jackson';

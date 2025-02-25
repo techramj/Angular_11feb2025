@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TaskComponent } from './task/task.component';
+import { NewTaskData, Task } from './task.model';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { TasksService } from './tasks.service';
 
@@ -19,7 +20,6 @@ export class TasksComponent {
   isAddingTask = false;
 
   constructor(private taskService:TasksService){
-    console.log('TasksComponent createdQ!!');
   }
 
   /*taskService = new TasksService(); 
@@ -41,6 +41,10 @@ export class TasksComponent {
 
   onCancelNewTask(){
     this.isAddingTask = false;
+  }
+
+  onAddTask(data:NewTaskData){
+    this.taskService.addTask(data, this.selectUserId);
   }
 
 }
