@@ -87,4 +87,29 @@ create three component and call it in three differnt way
 2. property selector
 3. class selector
 
+# Assignment 6
+
+component
+  Servers
+    servers = [
+      {
+        id:'s1',
+        name:'db',
+        status:'up'
+      },
+    ]; //5
+
+     server
+       name
+       status: up/down
+       button: if it is up then button name should be shutdown and vice versa
+
+    display list of server.
+    if it is up,  status in green else status in red color
+
+# Assignment 6
+   modify the above project using service
+    
+  
+
 
