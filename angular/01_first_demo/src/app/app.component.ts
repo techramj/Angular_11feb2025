@@ -9,11 +9,13 @@ import { ButtonBannerComponent } from './button-banner/button-banner.component';
 import { ButtonComponent } from './button/button.component';
 import { BindingComponent } from './binding/binding.component';
 import { AngularBasicComponent } from './angular-basic/angular-basic.component';
+import { ServerComponent } from './servers/server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent, AngularBasicComponent],
+  imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent, AngularBasicComponent, ServersComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

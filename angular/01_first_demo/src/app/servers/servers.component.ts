@@ -1,0 +1,36 @@
+import { Component } from '@angular/core';
+import { ServerComponent } from './server/server.component';
+
+@Component({
+  selector: 'app-servers',
+  standalone: true,
+  imports: [ServerComponent],
+  templateUrl: './servers.component.html',
+  styleUrl: './servers.component.css'
+})
+export class ServersComponent {
+
+  servers = [
+    {
+      id:'s1',
+      name:'Server One',
+      status:'down'
+    },
+    {
+      id:'s2',
+      name:'Server Two',
+      status:'up'
+    },
+    {
+      id:'s3',
+      name:'Server Three',
+      status:'down'
+    },
+    {
+      id:'s4',
+      name:'Server Four',
+      status:'up'
+    },
+  ];
+
+}
