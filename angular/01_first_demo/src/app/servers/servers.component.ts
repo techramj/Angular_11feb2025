@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ServerComponent } from './server/server.component';
+import { type Server } from './server.model';
 
 @Component({
   selector: 'app-servers',
@@ -10,7 +11,7 @@ import { ServerComponent } from './server/server.component';
 })
 export class ServersComponent {
 
-  servers = [
+  servers:Server[] = [
     {
       id:'s1',
       name:'Server One',
