@@ -34,4 +34,15 @@ export class ServersComponent {
     },
   ];
 
+  onServerStartOrDown(id:string){
+    console.log('id= ', id);
+
+    for(let s of this.servers){
+      if(s.id === id){
+        s.status = s.status === 'up'?'down':'up';
+      }
+    }
+    
+  }
+
 }

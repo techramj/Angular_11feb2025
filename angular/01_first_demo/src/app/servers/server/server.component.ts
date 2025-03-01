@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { type Server } from '../server.model';
 import { CommonModule } from '@angular/common';
 
@@ -13,5 +13,11 @@ export class ServerComponent {
 
 
   @Input() server!:Server;
+  @Output()  statusChanged =  new EventEmitter<string>();
+
+  onServerStartOrDown(){
+    console.log(this.server.id);
+    this.statusChanged.emit(this.server.id);
+  }
 
 }

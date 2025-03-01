@@ -1,5 +1,5 @@
 <p>servers works!</p>
 
 @for(item of servers;track item.id){
-    <app-server [server]="item" />
+    <app-server [server]="item"   (statusChanged) =onServerStartOrDown($event)  />
 }

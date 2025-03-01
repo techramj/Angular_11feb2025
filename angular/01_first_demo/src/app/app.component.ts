@@ -12,12 +12,13 @@ import { AngularBasicComponent } from './angular-basic/angular-basic.component';
 import { ServerComponent } from './servers/server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { GreetComponent } from './greet/greet.component';
+import { DirectiveExpComponent } from './directive-exp/directive-exp.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent, AngularBasicComponent, ServersComponent,
-    GreetComponent
+    GreetComponent, DirectiveExpComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -2,7 +2,9 @@
     <h3>{{server.name}}'s details</h3>
     <p>id:{{server.id}}</p>
     <p [ngStyle]="{'color': server.status === 'up'?'green':'red'}">status: {{server.status}}</p>
-    <button [ngClass]="{'btn':true, 'btn-danger': server.status==='up', 'btn-success':server.status != 'up'}">
+    <button [ngClass]="{'btn':true, 'btn-danger': server.status==='up', 'btn-success':server.status != 'up'}"
+    (click)="onServerStartOrDown()"
+    >
         {{server.status === 'up'?'shutdown':'start server'}}
     </button>
 </fieldset>
