@@ -42,3 +42,89 @@ btn                         button clickd count = 1
 ```
 ng g s service-name
 ```
+
+## Directive
+1. component
+2. structural (ngIf, ngFor, ngSwitchCase)
+3. attribute (ngStyle, ngCLass)
+
+- ngStyle
+
+  [ngStyle] = "{key:value}"
+  key = style-name
+
+  [ngStyle] = "{'backgroundColor': 'red'}"
+
+- ngClass
+  [ngClass] = "[className]"
+  [ngClass] = "{key:value, key:value}"
+  key = className
+  value = conditioin (whether you want to apply)
+```
+<fieldset>
+    <button [ngClass]="['btn', server.status === 'up'?'btn-danger':'btn-success']">
+        {{server.status === 'up'?'shutdown':'start server'}}
+    </button>
+```
+
+  ### step to add bootstrap
+
+1. add the link in the header and script on the body as mentioned
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+2. install the bootstrap
+npm intall --save bootstrap
+
+3. add the path in angular.json
+```
+ ],
+            "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+```
+
+## Directive
+
+Directives are enhancement for elements.
+enhancement means extra behaviour.
+
+Componenent -> selector, template
+Directive -> selector
+
+Componenet is a directive with a template.
+```
+<input name="age" ngModel>
+<p *ngIf> </p>
+```
+
+### Type of Directive
+1. component
+2. structural
+    - *ngIf
+    - *ngFor
+    - *ngSwitchCase
+3. attribute
+    - ngModel
+    - ngClass
+    - ngSytle
+
+4. custom directive
+
+### how to create custom direcive.
+```
+ng g d <directive-name> 
+eg: n g d
+
+https://github.com/techramj/   Angular_reference_code
+
+https://github.com/techramj/   Angular_11feb2025
+
+https://github.com/techramj/   Angular_11feb2025/blob/main/notes/setup.md
+
+
+
+```

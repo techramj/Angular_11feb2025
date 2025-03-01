@@ -14,12 +14,13 @@ import { ServersComponent } from './servers/servers.component';
 import { GreetComponent } from './greet/greet.component';
 import { DirectiveExpComponent } from './directive-exp/directive-exp.component';
 import { SafeLinkDirective } from './safe-link.directive';
+import { StructualDirectiveExpComponent } from './structual-directive-exp/structual-directive-exp.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [ ButtonBannerComponent, ButtonComponent, BindingComponent, AngularBasicComponent, ServersComponent,
-    GreetComponent, DirectiveExpComponent
+    GreetComponent, DirectiveExpComponent, StructualDirectiveExpComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
