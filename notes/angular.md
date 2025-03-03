@@ -125,6 +125,29 @@ https://github.com/techramj/   Angular_11feb2025
 
 https://github.com/techramj/   Angular_11feb2025/blob/main/notes/setup.md
 
+```
+
+## module 
+- when Angular 2 was released 2016, there were no standalone components.
+- we are using the module based components till Angular 13.
+
+- After angular 15, by default angular project is standalone.
+
+```
+                        AppComponent
 
 
+              UserComponent           TasksComponent
+                                           NewTaskComponent
+                                           TaskComponent
+
+
+                            shared/TestComponent
+
+ng g c user
+ng g c tasks
+ng g c tasks/task
+ng g c tasks/new-task
+ng g c shared/test
+ng g c header
 ```
