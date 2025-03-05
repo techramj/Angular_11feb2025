@@ -7,6 +7,7 @@ import { ServersComponent } from './servers/servers.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EmployeesDetailsComponent } from './employees-details/employees-details.component';
 import { NoSuchEmpComponent } from './no-such-emp/no-such-emp.component';
+import { LifecycleDemoComponent } from './lifecycle-demo/lifecycle-demo.component';
 
 export const routes: Routes = [
    {path:'comp1', component:Comp1Component},
@@ -16,6 +17,7 @@ export const routes: Routes = [
    {path:'servers', component:ServersComponent},
    {path:'emp/:empId', component: EmployeesDetailsComponent},
    {path:'invalid-emp',component:NoSuchEmpComponent},
+   {path: "lifecycle", component:LifecycleDemoComponent},
    // {path:'',component:AngularBasicComponent , pathMatch:'full'},
    {path:'', redirectTo:'angular-basic', pathMatch:'full'},
    {path:'**', component:PageNotFoundComponent}
