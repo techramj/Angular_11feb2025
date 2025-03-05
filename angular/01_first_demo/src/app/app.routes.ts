@@ -6,6 +6,7 @@ import { AngularBasicComponent } from './angular-basic/angular-basic.component';
 import { ServersComponent } from './servers/servers.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EmployeesDetailsComponent } from './employees-details/employees-details.component';
+import { NoSuchEmpComponent } from './no-such-emp/no-such-emp.component';
 
 export const routes: Routes = [
    {path:'comp1', component:Comp1Component},
@@ -13,7 +14,8 @@ export const routes: Routes = [
    {path:'comp3', component:Comp3Component},
    {path:'angular-basic', component: AngularBasicComponent},
    {path:'servers', component:ServersComponent},
-   {path:'emp/:id', component: EmployeesDetailsComponent},
+   {path:'emp/:empId', component: EmployeesDetailsComponent},
+   {path:'invalid-emp',component:NoSuchEmpComponent},
    // {path:'',component:AngularBasicComponent , pathMatch:'full'},
    {path:'', redirectTo:'angular-basic', pathMatch:'full'},
    {path:'**', component:PageNotFoundComponent}

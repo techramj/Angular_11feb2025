@@ -142,7 +142,7 @@ https://github.com/techramj/   Angular_11feb2025/blob/main/notes/setup.md
                                            TaskComponent
 
 
-                            shared/TestComponent
+                            shared/TestComponent used by User and Tasks component
 
 ng g c user
 ng g c tasks
@@ -151,3 +151,46 @@ ng g c tasks/new-task
 ng g c shared/test
 ng g c header
 ```
+
+### convert standalone project to module based project
+#### step 1: create root module file (app.module.ts)
+```
+@NgModule({
+    declarations : [] //register or declared all the components which is not standalone
+})
+export class AppModule{
+
+}
+```
+
+#### step 2: modify main.s
+
+#### step 3: modify the  app.module.ts
+```
+@NgModule({
+    declarations : [AppComponent, UserComponent, TasksComponent,
+        TaskComponent, NewTaskComponent
+    ],
+    bootstrap : [AppComponent],
+    imports : [BrowserModule, TestComponent]
+})
+export class AppModule{
+
+}
+
+```
+
+
+
+# Router
+```
+emp/1
+emp/2
+emp/3
+
+emp/{id} //java, asp
+emp/:id
+
+if you want to read pathParam: inject ActivatedRoute
+```
+
