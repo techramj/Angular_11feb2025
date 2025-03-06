@@ -12,6 +12,7 @@ export class Form3Component {
  
   @ViewChild('f') form!:NgForm;
 
+
   onSubmit(){
     let email = this.form.value.email;
     let username = this.form.value.username;
