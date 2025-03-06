@@ -8,6 +8,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { EmployeesDetailsComponent } from './employees-details/employees-details.component';
 import { NoSuchEmpComponent } from './no-such-emp/no-such-emp.component';
 import { LifecycleDemoComponent } from './lifecycle-demo/lifecycle-demo.component';
+import { Form1Component } from './forms/form1/form1.component';
+import { Form2Component } from './forms/form2/form2.component';
+import { Form3Component } from './forms/form3/form3.component';
+import { Form4Component } from './forms/form4/form4.component';
 
 export const routes: Routes = [
    {path:'comp1', component:Comp1Component},
@@ -18,6 +22,10 @@ export const routes: Routes = [
    {path:'emp/:empId', component: EmployeesDetailsComponent},
    {path:'invalid-emp',component:NoSuchEmpComponent},
    {path: "lifecycle", component:LifecycleDemoComponent},
+   {path:'form1', component: Form1Component},
+   {path:'form2', component:Form2Component },
+   {path:'form3', component: Form3Component},
+   {path:'form4', component: Form4Component},
    // {path:'',component:AngularBasicComponent , pathMatch:'full'},
    {path:'', redirectTo:'angular-basic', pathMatch:'full'},
    {path:'**', component:PageNotFoundComponent}

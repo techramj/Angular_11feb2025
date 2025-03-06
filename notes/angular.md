@@ -194,3 +194,8 @@ emp/:id
 if you want to read pathParam: inject ActivatedRoute
 ```
 
+
+# Lifcycle 
+https://v17.angular.io/guide/lifecycle-hooks
+
+
