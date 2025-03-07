@@ -5,10 +5,11 @@ import { HeaderComponent } from './header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent
+  imports: [RouterOutlet, HeaderComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: []
 })
 export class AppComponent {
   subject:string = 'Angular';

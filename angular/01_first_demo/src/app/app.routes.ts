@@ -12,6 +12,8 @@ import { Form1Component } from './forms/form1/form1.component';
 import { Form2Component } from './forms/form2/form2.component';
 import { Form3Component } from './forms/form3/form3.component';
 import { Form4Component } from './forms/form4/form4.component';
+import { EmpListComponent } from './emp/emp-list/emp-list.component';
+import { EmpEditComponent } from './emp/emp-edit/emp-edit.component';
 
 export const routes: Routes = [
    {path:'comp1', component:Comp1Component},
@@ -19,7 +21,8 @@ export const routes: Routes = [
    {path:'comp3', component:Comp3Component},
    {path:'angular-basic', component: AngularBasicComponent},
    {path:'servers', component:ServersComponent},
-   {path:'emp/:empId', component: EmployeesDetailsComponent},
+   {path:'emp-list', component: EmpListComponent},
+   {path:'emp-edit/:empId', component: EmpEditComponent},
    {path:'invalid-emp',component:NoSuchEmpComponent},
    {path: "lifecycle", component:LifecycleDemoComponent},
    {path:'form1', component: Form1Component},
