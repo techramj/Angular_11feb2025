@@ -199,3 +199,83 @@ if you want to read pathParam: inject ActivatedRoute
 https://v17.angular.io/guide/lifecycle-hooks
 
 
+# setup to create the dummy server using node json-server
+1. create the folder emp_db_server
+2. make it node project.
+```
+cd emp_db_server
+npm init -y
+```
+3. create json file, name as emp.json
+4. add the dummy data in the json file
+```
+{
+    "employees" :[
+        {"id":1, "name":"John", "salary":4000, "email":"john@test.com"},
+        {"id":2, "name":"Jessica", "salary":8000, "email":"jessica@test.com"},
+        {"id":3, "name":"Ajay", "salary":14000, "email":"ajay@test.com"},
+        {"id":4, "name":"Vijay", "salary":24000, "email":"vijay@test.com"},
+        {"id":5, "name":"Sanjay", "salary":3000, "email":"sanjay@test.com"}
+    ]
+}
+```
+
+5. execute below to install json server
+```
+npm install -g json-server
+```
+
+6. add the below command in package.json file
+```
+"start" : "npx json-server --watch emp.json",
+```
+it will look like
+```
+
+"scripts": {
+    "start" : "npx json-server --watch emp.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```
+
+7. start the server
+```
+npm start
+```
+
+##  perform the crud operation
+1. Get all employees details (method=GET)
+```
+GET: http://localhost:3000/employees
+```
+
+2. get employee by id (method = GET)
+```
+GET: http://localhost:3000/employees/{id}
+```
+
+3. add employee
+
+POST: http://localhost:3000/employees
+
+```
+{
+  "name": "Deepak",
+  "salary": 80000,
+  "email": "deepak@test.com"
+}
+
+```
+4. update employee
+PUT: http://localhost:3000/employees/{id}
+```
+{
+  "id": "2",
+  "name": "Jessica N",
+  "salary": 12000,
+  "email": "jessican@test.com"
+}
+```
+
+5. delete employee
+DELETE http://localhost:3000/employees/{id}
