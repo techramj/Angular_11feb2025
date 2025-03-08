@@ -1,1 +1,17 @@
-<p>emp-edit works!</p>
+<form>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="emp.name">
+    </div>
+
+    <div class="mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input type="number" class="form-control" name="salary" [(ngModel)]="emp.salary">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" name="email" [(ngModel)]="emp.email">
+    </div>
+    <button (click)="updateEmployee()" class="btn btn-primary">Update</button>
+  </form>

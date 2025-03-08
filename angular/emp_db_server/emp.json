@@ -2,39 +2,27 @@
   "employees": [
     {
       "id": "1",
-      "name": "John",
-      "salary": 4000,
-      "email": "john@test.com"
+      "name": "Johny",
+      "salary": 40000,
+      "email": "johny@test.com"
     },
     {
       "id": "2",
-      "name": "Jessica N",
-      "salary": 12000,
-      "email": "jessican@test.com"
-    },
-    {
-      "id": "3",
-      "name": "Ajay",
-      "salary": 14000,
-      "email": "ajay@test.com"
+      "name": "Jessica",
+      "salary": 8000,
+      "email": "jessica@test.com"
     },
     {
       "id": "4",
-      "name": "Vijay",
+      "name": "Bijay",
       "salary": 24000,
-      "email": "vijay@test.com"
+      "email": "bijay@test.com"
     },
     {
-      "id": "286b",
-      "name": "Deepak",
-      "salary": 80000,
-      "email": "deepak@test.com"
-    },
-    {
-      "id": "46f4",
-      "name": "Gauri",
-      "salary": 85000,
-      "email": "gauri@test.com"
+      "id": "5",
+      "name": "Sanjay",
+      "salary": 300000,
+      "email": "sanjay@test.com"
     }
   ]
 }

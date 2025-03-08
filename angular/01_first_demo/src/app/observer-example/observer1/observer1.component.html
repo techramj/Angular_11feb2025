@@ -1,0 +1,14 @@
+<div class="container">
+    <h3>Observable Demo 1</h3>
+    @for(x of data;track x){
+        <p>{{x}}</p>
+    }
+
+    <p>
+        <button (click)="getAsyncData1()">Get Data for observable1</button>
+    </p>
+
+    <p>
+        <button (click)="getAsyncData2()">Get Data for observable2</button>
+    </p>
+</div>

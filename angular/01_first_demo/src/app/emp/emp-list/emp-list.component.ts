@@ -17,13 +17,22 @@ export class EmpListComponent {
   constructor(private empService:EmpService){}
 
   ngOnInit(){
-    this.empService.getAllEmployees().subscribe(data => {
-      this.empList = data;
-    });
+    this.loadEmp();
   }
 
   deleteEmp(id:any){
     console.log('id to be deleted: ', id);
+    this.empService.deleteEmp(id).subscribe((data)=>{ 
+      console.log(data," deleted");
+      this.loadEmp();
+    });
+   
+  }
+
+  loadEmp(){
+    this.empService.getAllEmployees().subscribe(data => {
+      this.empList = data;
+    });
   }
 
 }
